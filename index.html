@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Rent Right connect</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>House Listings</h1>
+    </header>
+
+    <div class="container">
+        <form id="listing-form">
+            <label for="location">Location:</label>
+            <input type="text" id="location" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea>
+
+            <label for="price">Price in Kwacha:</label>
+            <input type="number" id="price" required>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" accept="image/*" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="listings"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
